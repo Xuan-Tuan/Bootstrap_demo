@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Demo_Boostrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link href="./main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ========== Header ==========  -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="main.html" class="d-flex align-items-center me-auto me-lg-0">
+          <h3><b>Team 4</b></h3>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="#hero">Trang chủ</a></li>
+            <li><a href="#about">Về chúng tôi</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#view">Không gian</a></li>
+            <li class="dropdown">
+              <a href="#book-a-table"
+                ><span>Đặt trà sữa</span>
+                <i class="bi bi-chevron-down dropdown-indicator"></i
+              ></a>
+              <ul>
+                <li><a href="#">Giao hàng tận nơi</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Đặt chỗ tại quán</span>
+                    <i class="bi bi-chevron-down dropdown-indicator"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#view">view 1</a></li>
+                    <li><a href="#view">view 2</a></li>
+                    <li><a href="#view">view 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Hẹn giờ đến nhận</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Liên lạc</a></li>
+          </ul>
+        </nav>
+        <!-- .navbar -->
+
+        <a class="btn-book-a-table" href="./login.html">Đăng nhập</a>
+        <i class="mobile-nav-show bi bi-list"></i>
+        <!-- <i class=" mobile-nav-hide d-none bi bi-x"></i> -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center section-bg">
+      <div class="container">
+        <div class="row justify-content-between gy-5">
+          <div
+            class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start"
+          >
+            <h2>Ở đây có bán<br />trà sữa</h2>
+            <p>
+              Đến để trải nghiệm, đặt chỗ ngay bây giờ để chill cùng homies của
+              bạn.
+            </p>
+            <div class="d-flex">
+              <a href="#book-a-table" class="btn-book-a-table">Đặt chỗ</a>
+              <a
+                href="https://www.youtube.com/shorts/zR-iR0Td2vk"
+                class="glightbox btn-watch-video d-flex align-items-center"
+                ><i class="bi bi-play-circle"></i><span>Xem cửa hàng</span></a
+              >
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/carousel1.png" class="d-block w-100 " alt="" />
+                </div>
+                <div class="carousel-item">
+                  <img
+                  
+                    src="./img/carousel2.jpg"
+                    class="d-block w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                   
+                    src="./img/carousel3.jpg"
+                    class="d-block w-100 "
+                    alt=""
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-header">
+            <h2>Thông tin thêm</h2>
+            <p>Trà sữa <span>mẹ nấu</span></p>
+          </div>
+
+          <div class="row gy-4">
+            <div
+              class="col-lg-7 position-relative about-img"
+              style="background-image: url(./img/view.png)"
+            >
+              <div class="call-us position-absolute">
+                <h4>Đặt chỗ</h4>
+                <p>1900 1009</p>
+              </div>
+            </div>
+            <div class="col-lg-5 d-flex align-items-end">
+              <div class="content ps-0 ps-lg-5">
+                <p class="fst-italic">
+                  Chúng tôi ở đây để phục vụ bạn và những người thân yêu của
+                  bạn.
+                </p>
+                <ul>
+                  <li>
+                    <i class="bi bi-check2-all"></i> Với không gian rộng rãi
+                    sạch đẹp.
+                  </li>
+                  <li><i class="bi bi-check2-all"></i> Đa dạng thức uống.</li>
+                  <li><i class="bi bi-check2-all"></i> Giá cả hạt dẻ.</li>
+                </ul>
+                <p>Trải nghiệm ngay hôm nay để không lãng phí tuổi trẻ.</p>
+
+                <div class="position-relative mt-4">
+                  <img src="./img/ta_tua_02.jpg" class="img-fluid" alt="" />
+                  <a
+                    href="https://www.youtube.com/watch?v=BKJsPKa40gU"
+                    class="play-btn"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Menu Section ======= -->
+      <section id="menu" class="menu">
+        <div class="container">
+          <div class="tab-content">
+            <div>
+              <div class="section-header">
+                <h2>Thực đơn</h2>
+                <p>Xem thực đơn của chúng tôi</p>
+              </div>
+
+              <div class="row gy-5">
+                <div class="col-lg-4 menu-item">
+                  <a href="./img/menu/Bac_Ha.jpg"
+                    ><img
+                      src="./img/menu/Bac_Ha.jpg"
+                      class="menu-img img-fluid"
+                      alt=""
+                  /></a>
+                  <h4>Trà sữa Bạc Hà</h4>
+                  <p class="price">35k</p>
+                </div>
+                <!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="./img/menu/Matcha.jpg"
+                    ><img
+                      src="./img/menu/Matcha.jpg"
+                      class="menu-img img-fluid"
+                      alt=""
+                  /></a>
+                  <h4>Trà sữa Matcha</h4>
+                  <p class="price">30k</p>
+                </div>
+                <!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="./img/menu/Tran_chau_Duong_Den.jpg"
+                    ><img
+                      src="./img/menu/Tran_chau_Duong_Den.jpg"
+                      class="menu-img img-fluid"
+                      alt=""
+                  /></a>
+                  <h4>Trà sữa trân châu đường đen</h4>
+                  <p class="price">25k</p>
+                </div>
+                <!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="./img/menu/Xoai_Kem.jpg"
+                    ><img
+                      src="./img/menu/Xoai_Kem.jpg"
+                      class="menu-img img-fluid"
+                      alt=""
+                  /></a>
+                  <h4>Trà sữa xoài kem</h4>
+                  <p class="price">30k</p>
+                </div>
+                <!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="./img/menu/TrasuaTopingsuongsao.jpg"
+                    ><img
+                      src="./img/menu/TrasuaTopingsuongsao.jpg"
+                      class="menu-img img-fluid"
+                      alt=""
+                  /></a>
+                  <h4>Trà sữa Toping sương sao</h4>
+                  <p class="price">35k</p>
+                </div>
+                <!-- Menu Item -->
+
+                <div class="col-lg-4 menu-item">
+                  <a href="./img/menu/Trasuahaingan.jpg"
+                    ><img
+                      src="./img/menu/Trasuahaingan.jpg"
+                      class="menu-img img-fluid"
+                      alt=""
+                  /></a>
+                  <h4>Trà sữa 2 ngăn đặc biệt</h4>
+                  <p class="price">40k</p>
+                </div>
+                <!-- Menu Item -->
+              </div>
+            </div>
+            <!-- End Starter Menu Content -->
+          </div>
+        </div>
+      </section>
+      <!-- End Menu Section -->
+
+      <!-- ======= View Section ======= -->
+      <section id="view" class="view section-bg">
+        <div class="container">
+          <div class="section-header">
+            <h2>View</h2>
+            <p>Our <span>views</span></p>
+          </div>
+
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="view-member">
+                <div class="member-img">
+                  <img src="./img/views/view01.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="member-info">
+                  <h4>Vị trí 1</h4>
+                  <span>Available</span>
+                </div>
+              </div>
+            </div>
+            <!-- End view1-->
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="view-member">
+                <div class="member-img">
+                  <img src="./img/views/view02.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="member-info">
+                  <h4>Vị trí 2</h4>
+                  <span>Available</span>
+                </div>
+              </div>
+            </div>
+            <!-- End view2 -->
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="view-member">
+                <div class="member-img">
+                  <img src="./img/views/view03.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="member-info">
+                  <h4>Vị trí 3</h4>
+                  <span>reserved</span>
+                </div>
+              </div>
+            </div>
+            <!-- End view3 -->
+          </div>
+        </div>
+      </section>
+      <!-- End view Section -->
+
+      <!-- ======= Book A table Section ======= -->
+      <section id="book-a-table" class="book-a-table">
+        <div class="container">
+          <div class="section-header">
+            <h2>Đặt chỗ</h2>
+            <p>Đặt <span> chỗ của bạn</span> tại đây</p>
+          </div>
+          <div class="row g-0">
+            <div
+              class="col-lg-4 reservation-img"
+              style="background-image: url(./img/reservation.jpg)"
+            ></div>
+
+            <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+              <form class="email-form">
+                <div class="row gy-4">
+                  <div class="col-lg-4 col-md-6">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="phone"
+                      id="phone"
+                      placeholder="Your Phone"
+                      required
+                    />
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input
+                      type="text"
+                      name="date"
+                      class="form-control"
+                      id="date"
+                      placeholder="Date"
+                      required
+                    />
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="time"
+                      id="time"
+                      placeholder="Time"
+                      required
+                    />
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="people"
+                      id="people"
+                      placeholder="# of people"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="mb-3"></div>
+                <div class="text-center">
+                  <button type="submit">Book a Table</button>
+                </div>
+              </form>
+            </div>
+            <!-- End Reservation Form -->
+          </div>
+        </div>
+      </section>
+      <!-- End Book A Table Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2>Liên lạc</h2>
+            <p><span>Liên hệ với chúng tôi</span></p>
+          </div>
+
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="info-item d-flex align-items-center">
+                <i class="icon bi bi-map flex-shrink-0"></i>
+                <div>
+                  <h3>Địa chỉ</h3>
+                  <p>Linh Trung, Thủ Đức, TP Hồ Chí Minh</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item d-flex align-items-center">
+                <i class="icon bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>trasuamenau@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item d-flex align-items-center">
+                <i class="icon bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Số điện thoại</h3>
+                  <p>1900 1009</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item d-flex align-items-center">
+                <i class="icon bi bi-share flex-shrink-0"></i>
+                <div>
+                  <h3>giờ mở cửa</h3>
+                  <div>
+                    <strong>Mon-Sat:</strong> 7AM - 23PM;
+                    <strong>Sunday:</strong> Đóng cửa
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Info Item -->
+          </div>
+
+          <form class="email-form p-3 p-md-4">
+            <div class="row">
+              <div class="col-xl-6 form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="col-xl-6 form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                name="message"
+                rows="5"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <div class="my-3"></div>
+            <div class="text-center">
+              <button class="btn btn-primary" type="submit">Send message</button>
+            </div>
+          </form>
+          <!--End Contact Form -->
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ========= Footer ========= -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-3 col-md-6 d-flex">
+            <i class="bi bi-geo-alt icon"></i>
+            <div>
+              <h4>Address</h4>
+              <p>
+                Khu phố 6 <br />
+                Linh Trung, Thủ Đức, Hồ Chí Minh<br />
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+            <i class="bi bi-telephone icon"></i>
+            <div>
+              <h4>Reservations</h4>
+              <p>
+                <strong>Phone:</strong> 1900 1009<br />
+                <strong>Email:</strong> trasuamenau@gmail.com<br />
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+            <i class="bi bi-clock icon"></i>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>
+                <strong>Mon-Sat: 7AM</strong> - 23PM<br />
+                Sunday: Closed
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Follow Us</h4>
+            <div class="social-links d-flex">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+</html>
